@@ -34,7 +34,7 @@ body{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
-    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
 .form input:focus + label,
@@ -52,8 +52,8 @@ body{
     background-color: rgb(70, 187, 148);
     border: none;
     border-bottom: 2px solid black;
-    margin: 10px;
-    padding: 5px;
+    margin: 13px;
+    padding: 3px;
 }
 
 .container input:focus{
@@ -86,3 +86,24 @@ body{
 .container p{
     text-align: center;
 }
+
+.wavy {
+    animation-name: wavy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
