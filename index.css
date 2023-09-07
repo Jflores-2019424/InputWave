@@ -21,10 +21,6 @@ body{
     flex-direction: column;
 }
 
-.container label{
-    margin: 3px;
-}
-
 .form{
     display: flex;
     flex-direction: column;
@@ -34,6 +30,9 @@ body{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
+    position: absolute;
+    left: 29px;
+    pointer-events: none;
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
@@ -41,11 +40,6 @@ body{
 .form input:valid + label{
     opacity: 0.8;   
     transform: translateY(-15px);
-}
-
-.form label{
-    position: absolute;
-    left: 20px;
 }
 
 .form input{
